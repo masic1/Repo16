@@ -5,9 +5,9 @@ class Pets {
         this.legs = legs;
     }
 
-    static walk(numberOfLegs) {
-        this.legs = numberOfLegs;
-        return this._name + " is walking on " + numberOfLegs + " legs";
+    walk(numberOfLegs) {
+        this.numberOfLegs = numberOfLegs;
+        return (`${this.name} is walking on ${this.legs} legs`);
     }
 }
 
@@ -16,9 +16,9 @@ class Dog extends Pets {
         super(name, legs);
     }
 
-    static bark(dogSay) {
-        this.name = dogSay
-        return this.name + " says WUF-WUF";
+    bark(dogSay) {
+        this.dogSay = dogSay
+        return (`${this.name} says WUF-WUF.`);
     }
 }
 // Only change code above this line
